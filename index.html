@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="listaTelefonica">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./angular-1.7.9/angular.js"></script>
+    <title>AngularJS Lista Telefonica</title>
+    <script>
+        angular.module("listaTelefonica", []);
+        angular.module("listaTelefonica").controller("listaTelefonicaCtrl", function ($scope){
+            $scope.mensagem = "Teste AngularJS";
+        });
+    </script>
+</head>
+<body ng-controller="listaTelefonicaCtrl">
+    <h1>{{mensagem}}</h1>
+</body>
+</html>
